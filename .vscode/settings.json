@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/01eda2cb-164e-4bcd-84ab-e2fa89c5ada5/AppServices/subscriptions/01eda2cb-164e-4bcd-84ab-e2fa89c5ada5/resourceGroups/Empopasto/providers/Microsoft.Web/sites/EmpopastoWeb",
+    "appService.deploySubpath": "build"
+}

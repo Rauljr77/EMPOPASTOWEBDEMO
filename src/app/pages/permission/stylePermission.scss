@@ -1,0 +1,43 @@
+$modal-width: 1000px;
+
+.modal-create-edit-backdrop {
+  background-color: #000000AA;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 200;
+}
+
+.modal-create-edit {
+  background-color: #FFF;
+  display: flex;
+  max-width: $modal-width;
+  min-width: $modal-width;
+  position: relative;
+  width: $modal-width;
+  .modal-create-edit-content {}
+}
+
+.modal-create-edit-close-button {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  padding: 0.4em;
+  cursor: pointer;
+}
+
+.table-associate {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+  td, th {
+    border: 1px solid #DDDDDD;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .main-headers {
+    background-color: #DDDDDD;
+  }
+}
