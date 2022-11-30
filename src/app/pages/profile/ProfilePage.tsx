@@ -147,6 +147,51 @@ export const AdminProfilePage = () => {
           <div className="row mx-0 my-3 px-5">
             <div style={{ height: 400, width: "100%" }}>
               <DataGrid
+                sx={{
+                  border: 0,
+    color: '#757575',
+    fontFamily: 'Lato',
+    WebkitFontSmoothing: 'auto',
+    letterSpacing: 'normal',
+  '& .MuiDataGrid-row': {
+   width: '1191px',
+   height: '34px',
+  background: '#FFFFFF',
+  borderRadius: '27px',
+
+},
+'& .MuiDataGrid-iconSeparator': {
+  display: 'none',
+},
+'& .MuiDataGrid-columnHeaders': {
+
+  width: '1191px',
+  minHeight: '34px',
+  background: '#D5DFED',
+  borderRadius: '20px',
+
+},
+'& .MuiDataGrid-columnHeaderTitle': {
+  fontWeight: 700,
+  fontSize: '14px', minHeight: '34px',
+},
+'& .MuiDataGrid-row.Mui-selected': {
+  background:' #FFFFFF',
+  border: '1px solid #73A0FF',
+  borderRadius:' 27px',
+},
+'& .MuiDataGrid-cell': {
+  fontFamily:'Lato',
+  fontWeight: 400,
+  fontSize: '14px',
+  lineHeight: '17px', 
+  color: '#757575',
+  boxSizing: 'none',borderBottom: 'none',
+},
+'& .MuiPaginationItem-root': {
+  borderRadius: 0,
+}
+                }}
                 columns={columns}
                 rows={currentList}
                 pageSize={5}
