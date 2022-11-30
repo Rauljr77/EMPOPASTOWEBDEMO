@@ -17,6 +17,7 @@ import {
   search,
   updateItemInLists,
 } from "./ConsultaRutaPage.utils";
+import { DATAGRID_STYLE } from "../../constants/Styles";
 
 export const ConsultaRutaPage = () => {
   const [rows, setRows] = useState<IRow[]>([]);
@@ -74,6 +75,7 @@ export const ConsultaRutaPage = () => {
           <div className="row mx-0 my-3 px-5">
             <div style={{ width: "100%", height: 400 }}>
               <DataGrid
+                sx={DATAGRID_STYLE}
                 columns={columns}
                 rows={currentList}
                 pageSize={5}

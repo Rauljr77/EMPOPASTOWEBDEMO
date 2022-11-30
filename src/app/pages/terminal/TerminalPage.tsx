@@ -23,6 +23,7 @@ import { usePermiso, IPermiso } from "../../hooks/usePermiso";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { CONFIG_TOAST } from "../../constants/ConfigToast";
+import { DATAGRID_STYLE } from "../../constants/Styles";
 
 export const TerminalPage = () => {
   const [isVisibleCreate, setVisibleCreate] = useState<boolean>(false);
@@ -132,6 +133,7 @@ export const TerminalPage = () => {
           <div className="row mx-0 my-3 px-5">
             <div style={{ height: 400, width: "100%" }}>
               <DataGrid
+                sx={DATAGRID_STYLE}
                 columns={columns}
                 rows={currentList}
                 pageSize={5}

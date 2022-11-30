@@ -30,6 +30,7 @@ import { getAllUsuarios } from "../../services/usuarios.service";
 import { getAllLectores } from "../../services/lector.service";
 import { getAllPerfiles } from "../../services/perfiles.service";
 import { createTerminalByUsuario, deleteTerminalByUsuario, getAllTerminalByUsuariosFull } from "../../services/terminalUsuario.service";
+import { DATAGRID_STYLE } from "../../constants/Styles";
 
 export const DeviceAdminPageCopy = () => {
   const [isVisibleCreate, setVisibleCreate] = useState<boolean>(false);
@@ -307,6 +308,7 @@ export const DeviceAdminPageCopy = () => {
           <div className="row mx-0 my-3 px-5">
             <div style={{ height: 400, width: "100%" }}>
               <DataGrid
+                sx={DATAGRID_STYLE}
                 columns={columns}
                 rows={currentList}
                 pageSize={5}

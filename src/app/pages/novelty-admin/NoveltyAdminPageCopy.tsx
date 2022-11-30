@@ -30,6 +30,7 @@ import { getAllMensajes } from "../../services/mensaje.service";
 import { createNovedadByMensaje, deleteNovedadByMensaje, getAllNovedadByMensajesFull } from "../../services/novedadMensaje.service";
 import NoveltyAddModal from "./NoveltyAddModal";
 import { createNovedad, updateNovedad } from "../../services/novedad.service";
+import { DATAGRID_STYLE } from "../../constants/Styles";
 
 export const NoveltyAdminPageCopy = () => {
   const [isVisibleCreate, setVisibleCreate] = useState<boolean>(false);
@@ -354,6 +355,7 @@ export const NoveltyAdminPageCopy = () => {
             <div
               style={{ height: 400, width: '100%' }}>
               <DataGrid
+                sx={DATAGRID_STYLE}
                 columns={columns}
                 rows={currentList}
                 pageSize={5}

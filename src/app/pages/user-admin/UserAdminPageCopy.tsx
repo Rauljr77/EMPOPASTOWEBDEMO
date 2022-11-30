@@ -31,6 +31,7 @@ import { CONFIG_TOAST } from "../../constants/ConfigToast";
 import DialogDefault from "../../components/common/dialog/DialogDefault";
 import { IPermiso, usePermiso } from "../../hooks/usePermiso";
 import { useNavigate } from "react-router-dom";
+import { DATAGRID_STYLE } from "../../constants/Styles";
 
 const UserAdminPageCopy = () => {
   const [isAllSelect, setAllSelect] = useState<boolean>(true);
@@ -278,6 +279,7 @@ const UserAdminPageCopy = () => {
           <div className="row mx-0 my-3 px-5">
             <div style={{ height: 400, width: "100%" }}>
               <DataGrid
+                sx={DATAGRID_STYLE}
                 columns={columns}
                 rows={currentList}
                 pageSize={5}
